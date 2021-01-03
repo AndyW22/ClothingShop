@@ -8,7 +8,6 @@ export default withRouter(
       className={`${size} menu-item`}
       onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
-      {console.log(match.url)}
       <div
         className="background-image"
         style={{
