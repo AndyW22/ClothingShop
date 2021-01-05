@@ -10,6 +10,7 @@
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
     "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
