@@ -10,6 +10,8 @@
   },
   "rules": {
     "jsx-a11y/href-no-hash": ["off"],
+    "react/sort-comp": "off",
+    "react/button-has-type": "off",
     "react/prop-types": "off",
     "react/destructuring-assignment": "off",
     "react/jsx-props-no-spreading": "off",
