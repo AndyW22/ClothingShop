@@ -35,8 +35,8 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <button onClick={() => console.log(this.state.currentUser)}>
-          Click me
+        <button onClick={() => console.log(this.props.currentUser)}>
+          Show current user
         </button>
         <Switch>
           <Route exact path="/" component={Homepage} />
