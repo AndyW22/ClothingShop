@@ -5,7 +5,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
 import CartItem from '../cart-item/cart-item.component';
 import './cart-dropdown.styles.scss';
-import toggleCartHidden from '../../redux/cart/cart.actions';
+import { toggleCartHidden } from '../../redux/cart/cart.actions';
 
 const mapStateToProps = (state) => ({
   cartItems: selectCartItems(state),
