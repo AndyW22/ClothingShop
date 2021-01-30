@@ -24,10 +24,9 @@ class App extends React.Component {
         userRef.onSnapshot((snapShot) => {
           setCurrentUsers({ id: snapShot.id, ...snapShot.data() });
         });
+      } else {
+        setCurrentUsers(userAuth);
       }
-      // else {
-      //   setCurrentUsers(userAuth);
-      // }
       setCurrentUser(userAuth);
     });
   }
