@@ -19,6 +19,7 @@ export default connect(
   mapDispatchToProps,
 )(({ item, addItem: addAnItem }) => {
   const { name, price, imageUrl } = item;
+
   return (
     <CollectionItem>
       <Image image={imageUrl} />
