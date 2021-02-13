@@ -11,11 +11,17 @@ export const Image = styled.div`
 `;
 
 export const CustomButtonContainer = styled(CustomButton)`
-  width: 80%;
   opacity: 0.7;
   position: absolute;
   top: 255px;
   display: none;
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
+  }
 `;
 
 export const CollectionItem = styled.div`
@@ -25,13 +31,30 @@ export const CollectionItem = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
-
+  display: flex;
+  
   &:hover ${CustomButtonContainer} {
-    opacity: 0.85;
     display: flex;
+    opacity: 0.85;
+    button {
+      opacity: 0.85;
+      display: flex;
+    }
   }
   &:hover ${Image} {
     opacity: 0.8;
+  }
+
+  @media screen and (max-width: 1000px) {
+    &:hover ${CustomButtonContainer} {
+      opacity: unset;
+      button {
+        opacity: unset;
+      }
+    }
+    &:hover ${Image} {
+      opacity: 0.8;
+    }
   }
 `;
 
