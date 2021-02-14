@@ -1,3 +1,5 @@
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
+
 const INITIAL_STATE = {
   sections: [
     {
@@ -35,9 +37,11 @@ const INITIAL_STATE = {
   ],
 };
 
-export default (state = INITIAL_STATE, action) => {
+const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     default:
       return state;
   }
 };
+
+export default reducer;
